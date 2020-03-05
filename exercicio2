@@ -1,0 +1,27 @@
+using System;
+
+namespace exercicio2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int zero, um, proximo, n;
+
+            zero = 0;
+            um = 1;
+
+            Console.WriteLine("Informe o nº elemento: "); 
+            n = int.Parse(Console.ReadLine());
+            Console.WriteLine(zero ,", ", um);
+
+        for (int x = 1; x <= n; x++){
+
+             proximo = zero + um;
+             Console.WriteLine(", ", proximo);
+             zero = um;
+             um = proximo;
+        }
+        }
+    }
+}
