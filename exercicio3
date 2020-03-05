@@ -1,0 +1,74 @@
+using System;
+
+namespace multFun
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero, n1, n2, adicao, soma = 0, div = 0, dobro, limitador;
+
+            Console.WriteLine(Digite a função desejado );
+            numero = int.Parse(Console.ReadLine());
+
+            if (numero  3 && numero != 7)
+            {
+                Console.WriteLine(O número informado não é valido!);
+            }
+
+                if(numero == 1)
+                {
+                    Console.WriteLine(entre com o valor para n);
+                    limitador = int.Parse(Console.ReadLine());
+
+                    for (int x = 0; x  limitador; x++)
+                    {
+                        for (int aux = 1; aux = x; aux++)
+                        {
+                            dobro = 2  x;
+                            div = x  aux;
+                            if (x % aux == 0)
+                            { 
+                            soma = soma + aux; 
+                            }
+                        }
+                        if (soma == dobro)
+                        {
+                            Console.WriteLine(x);
+                        }
+                    }
+                }
+
+                if(numero == 2)
+                {
+                    adicao = numero + 1;
+                    Console.WriteLine(A soma do nú mero informado +1 é , adicao);
+                }
+
+                if(numero == 3)
+                {
+                    Console.WriteLine(Digite o primero número );
+                    n1 = int.Parse(Console.ReadLine());
+                    Console.WriteLine(Digite o segundo número );
+                    n2 = int.Parse(Console.ReadLine());
+
+                       if(n1  n2)
+                    {
+                        Console.WriteLine(O resultado da divisão é , n1  n2);
+                        Console.WriteLine(E o resto da divisão é , n1 % n2);
+
+                    }
+                       if(n1  n2)
+                    {
+                        Console.WriteLine(O resultado da divisão é , n2  n1);
+                        Console.WriteLine(E o resto da divisão é , n2 % n1);
+                    }
+                }
+
+                if(numero == 7)
+                {
+                    Environment.Exit(0);
+                }
+            }
+        }
+    }
